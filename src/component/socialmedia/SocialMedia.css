@@ -1,0 +1,21 @@
+.contact-me {
+  margin-top: 80px;
+  padding: 100px;
+  background-color: #3c70a4;
+}
+
+.contact-me-header {
+  color: white;
+  font-size: 30px;
+}
+
+.social-media-class {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.btn-social-media {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}

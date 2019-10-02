@@ -1,0 +1,33 @@
+.recentwork-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.recentwork-summary {
+  font-size: 20px;
+  font-weight: 50%;
+}
+.recent-work-card {
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-work {
+  width: 23%;
+  padding: 0px;
+  margin: 10px;
+}
+
+.btn-radius {
+  border-radius: 24px;
+}
+
+.title-work {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.space-right {
+  margin-right: 10px;
+}
