@@ -14,12 +14,14 @@
   font-size: 24px;
   font-weight: bold;
   padding: 10px;
+  color: black;
 }
 
 .card-sub-title-bold {
   font-size: 16px;
-  color: #3c70a4;
+  color: #f5a623;
   padding: 10px;
+  font-weight: 400;
 }
 .space {
   margin-top: 20px;

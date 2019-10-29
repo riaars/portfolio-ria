@@ -91,12 +91,14 @@ class RecentWork extends Component {
             </div>
           </div>
           <div className="space"></div>
-          <a
-            href="https://dribbble.com/rrsari"
-            class="btn btn-outline-primary btn-radius">
-            <i class="fab fa-dribbble space-right" aria-hidden="true"></i>
-            See More on Dribble
-          </a>
+          <div className="dribble">
+            <a
+              href="https://dribbble.com/rrsari"
+              class="btn btn-outline-primary btn-radius">
+              <i class="fab fa-dribbble space-right" aria-hidden="true"></i>
+              See More on Dribble
+            </a>
+          </div>
         </div>
       </div>
     );

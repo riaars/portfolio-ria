@@ -17,6 +17,7 @@
 }
 .btn-social-media {
   border-radius: 50%;
+  border-width: 2px;
   width: 30px;
   height: 30px;
   margin: 5px;

@@ -20,7 +20,7 @@ class Skill extends Component {
             <li>Sketch</li>
             <li>Invision</li>
             <li>MarvelApp</li>
-            <li>Pen and Ppper</li>
+            <li>Pen and Paper</li>
           </div>
 
           <div className="card skill-card card-body col-sm-6 col-md-6 col-lg-6">

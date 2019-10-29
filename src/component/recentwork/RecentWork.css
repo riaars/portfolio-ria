@@ -1,6 +1,7 @@
 .recentwork-title {
   font-size: 40px;
   font-weight: bold;
+  color: black;
 }
 
 .recentwork-summary {
@@ -26,4 +27,8 @@
 .title-work {
   font-size: 18px;
   font-weight: bold;
+}
+
+.dribble {
+  padding: 40px;
 }
