@@ -10,13 +10,10 @@ import ProjectDetail from './component/projectdetail/ProjectDetail';
 function App() {
   return (
     <div className="App">
-      <Header />
-
       <Profile />
       <Skill />
       <RecentWork />
       <SocialMedia />
-      {/* <ProjectDetail /> */}
     </div>
   );
 }

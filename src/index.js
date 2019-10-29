@@ -1,16 +1,48 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Home from './App';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {BrowserRouter, Switch, Route, withRouter} from 'react-router-dom';
 import ProjectDetail from './component/projectdetail/ProjectDetail';
+import ProjectDetailBookio from './component/projectdetail/ProjectDetailBookio';
+import ProjectDetailShopistry from './component/projectdetail/ProjectDetailShopistry';
+import ProjectDetailHarvest from './component/projectdetail/ProjectDetailHarvest';
+import * as ROUTES from './constants/Routes';
+import App from './App';
+import Header from '../src/component/Header';
+
+const AppBase = () => (
+  <div className="container-body">
+    <Switch>
+      <Route
+        exact
+        path={ROUTES.PROJECT_DETAIL_FOODSHARER}
+        render={() => <ProjectDetail />}
+      />
+      <Route
+        exact
+        path={ROUTES.PROJECT_DETAIL_BOOKIO}
+        render={() => <ProjectDetailBookio />}
+      />
+      <Route
+        exact
+        path={ROUTES.PROJECT_DETAIL_SHOPISTRY}
+        render={() => <ProjectDetailShopistry />}
+      />
+      <Route
+        exact
+        path={ROUTES.PROJECT_DETAIL_HARVEST}
+        render={() => <ProjectDetailHarvest />}
+      />
+      <Route exact path={ROUTES.HOME} render={() => <App />} />
+    </Switch>
+  </div>
+);
+
 ReactDOM.render(
   <BrowserRouter>
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route exact path="/project/foodsharer" component={ProjectDetail} />
-    </Switch>
+    <Header />
+    <AppBase />
   </BrowserRouter>,
-
   document.getElementById('root')
 );
 

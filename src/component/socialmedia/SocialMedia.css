@@ -1,21 +1,43 @@
 .contact-me {
   margin-top: 80px;
-  padding: 100px;
-  background-color: #3c70a4;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5a623;
 }
 
 .contact-me-header {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .social-media-class {
   margin-top: 40px;
-  margin-bottom: 40px;
 }
 .btn-social-media {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-me {
+    margin-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .contact-me-header {
+    color: white;
+    font-size: 30px;
+  }
+  .btn-social-media {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
 }

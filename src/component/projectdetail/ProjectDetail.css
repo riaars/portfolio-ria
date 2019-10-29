@@ -1,25 +1,31 @@
-.cover {
-  width: 60%;
-  height: 60%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.left {
-  text-align: left;
-  margin-left: 20px;
-}
-
-.project-header {
-  display: flex;
-}
-
 .project-description {
   text-align: justify;
+  padding: 20px;
 }
 
 .project-detail-layout {
-  margin-right: 170px;
-  margin-left: 170px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .project-detail-layout {
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+  .project-description {
+    text-align: justify;
+    padding: 40px;
+  }
+  .project-info {
+    text-align: left;
+    padding: 40px;
+  }
+  .container {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .cover {
+    width: 100%;
+  }
 }
