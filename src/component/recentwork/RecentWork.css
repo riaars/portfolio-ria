@@ -14,8 +14,8 @@
   margin-right: auto;
 }
 .card-work {
-  width: 23%;
-  padding: 0px;
+  width: 100%;
+  padding: 20px;
   margin: 10px;
 }
 
@@ -30,4 +30,12 @@
 
 .space-right {
   margin-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .card-work {
+    width: 23%;
+    padding: 0px;
+    margin: 10px;
+  }
 }

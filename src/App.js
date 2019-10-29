@@ -5,6 +5,7 @@ import Skill from './component/skill/Skill';
 import RecentWork from './component/recentwork/RecentWork';
 import SocialMedia from './component/socialmedia/SocialMedia';
 import Profile from './component/profile/Profile';
+import ProjectDetail from './component/projectdetail/ProjectDetail';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Skill />
       <RecentWork />
       <SocialMedia />
+      {/* <ProjectDetail /> */}
     </div>
   );
 }

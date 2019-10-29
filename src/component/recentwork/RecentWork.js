@@ -6,11 +6,12 @@ import shopistry from '../../images/shopistry.png';
 import harvesthaven from '../../images/harvesthavent.png';
 import laundrybooking from '../../images/laundrybooking.png';
 import profile from '../../images/profile.png';
-
+import {Link, BrowserRouter, Router} from 'react-router-dom';
+import ProjectDetail from '../projectdetail/ProjectDetail';
 class RecentWork extends Component {
   render() {
     return (
-      <div>
+      <div className="container ">
         <div className="recentwork-title">My recent work</div>
         <div className="recentwork-summary">
           Here are a few recent design projects. Want to see more?{' '}
@@ -28,9 +29,11 @@ class RecentWork extends Component {
                 Sweden to reduce food waste.
               </p>
               <div className="space"></div>
-              <a href="#" class="btn btn-outline-primary btn-radius">
+              <Link
+                to="/project/foodsharer"
+                class="btn btn-outline-primary btn-radius">
                 Visit Work
-              </a>
+              </Link>
             </div>
           </div>
           <div className="card card-work">

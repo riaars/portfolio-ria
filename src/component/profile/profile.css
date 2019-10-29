@@ -16,9 +16,9 @@
 
 .profile-intro {
   margin-top: 20px;
-  font-size: 18px;
-  width: 50%;
+  font-size: 14px;
   margin: auto;
+  padding: 10px;
   color: white;
 }
 
@@ -27,6 +27,8 @@
   padding-top: 100px;
   margin-bottom: -160px;
   padding-bottom: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #3c70a4;
 }
 
@@ -35,4 +37,13 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .profile-intro {
+    margin-top: 20px;
+    font-size: 18px;
+    margin: auto;
+    color: white;
+  }
 }
