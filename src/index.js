@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './App';
-import {BrowserRouter, Switch, Route, withRouter} from 'react-router-dom';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import ProjectDetail from './component/projectdetail/ProjectDetail';
 import ProjectDetailBookio from './component/projectdetail/ProjectDetailBookio';
 import ProjectDetailShopistry from './component/projectdetail/ProjectDetailShopistry';

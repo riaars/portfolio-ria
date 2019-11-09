@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
 import './SocialMedia.css';
-// import {FaAlignRight} from 'react-icons/fa';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faThumbsUp} from '@fortawesome/free-solid-svg-icons';
 import 'font-awesome/css/font-awesome.min.css';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {faFacebookF} from '@fortawesome/free-brands-svg-icons';

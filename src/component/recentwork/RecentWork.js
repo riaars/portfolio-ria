@@ -9,11 +9,7 @@ import findrecipe from '../../images/find-recipe.png';
 import weatherforecast from '../../images/weather-forecast.png';
 import tapmusic from '../../images/tapmusic.png';
 import lyricfinder from '../../images/lyric-finder.png';
-
-import laundrybooking from '../../images/laundrybooking.png';
-import profile from '../../images/profile.png';
-import {Link, BrowserRouter, Router} from 'react-router-dom';
-import ProjectDetail from '../projectdetail/ProjectDetail';
+import {Link} from 'react-router-dom';
 import * as ROUTES from '../../constants/Routes';
 
 class RecentWork extends Component {
@@ -109,7 +105,8 @@ class RecentWork extends Component {
                 <a
                   href="https://vimeo.com/368869269"
                   class="btn btn-outline-primary btn-radius mt-auto"
-                  target="_blank">
+                  target="_blank"
+                  rel="noopener noreferrer">
                   Visit Work
                 </a>
               </div>
@@ -127,6 +124,7 @@ class RecentWork extends Component {
                 <a
                   href="https://deliciousy.netlify.com//"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="btn btn-outline-primary btn-radius mt-auto">
                   Visit Work
                 </a>
@@ -146,6 +144,7 @@ class RecentWork extends Component {
                 <a
                   href="https://singsong.netlify.com/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="btn btn-outline-primary btn-radius mt-auto">
                   Visit Work
                 </a>
@@ -165,6 +164,7 @@ class RecentWork extends Component {
                 <a
                   href="https://tapmenow.netlify.com/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="btn btn-outline-primary btn-radius mt-auto">
                   Visit Work
                 </a>
@@ -182,6 +182,7 @@ class RecentWork extends Component {
                 <a
                   href="https://weatheri.netlify.com/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="btn btn-outline-primary btn-radius mt-auto">
                   Visit Work
                 </a>

@@ -46,6 +46,7 @@ class Header extends Component {
                 className="mdl-navigation__link header-item"
                 href="https://riaratnaasari.wordpress.com/"
                 target="_blank"
+                rel="noopener noreferrer"
                 style={{padding: '20px'}}>
                 My Thoughts
               </a>
