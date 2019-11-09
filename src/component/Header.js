@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import Resume from '../assets/resume.pdf';
+import Resume from '../assets/resume-new.pdf';
 import './Header.css';
 import * as ROUTES from '../constants/Routes';
 import LOGO from '../images/logo.png';
