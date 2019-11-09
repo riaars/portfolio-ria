@@ -9,7 +9,7 @@ import ProjectDetail from './component/projectdetail/ProjectDetail';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="#home">
       <Profile />
       <Skill />
       <RecentWork />

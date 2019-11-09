@@ -4,7 +4,7 @@ class Skill extends Component {
   render() {
     return (
       <div className="container">
-        <div className="skill-component row ">
+        <div className="skill-component row  justify-content-center">
           <div className="card skill-card card-body col-sm-6 col-md-6 col-lg-6">
             <div className="card-title-bold">Designer</div>
             <p>

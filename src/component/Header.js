@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import Resume from '../assets/resume.pdf';
+import './Header.css';
+import * as ROUTES from '../constants/Routes';
 class Header extends Component {
   state = {
     isOpen: false,
@@ -8,26 +11,53 @@ class Header extends Component {
   handleToggle = () => {
     this.setState({isOpen: !this.state.isOpen});
   };
+
+  openPDF = () => {
+    window.open('../assets/resume.pdf');
+  };
   render() {
     return (
-      <nav className="navbar navbar-light bg-light">
-        <a className="navbar-brand" href="#"></a>
-        <div className="nav-center">
-          <div className="nav-header">
-            {/* <button
-              type="button"
-              className="nav-btn"
-              onClick={this.handleToggle}></button> */}
-          </div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light mdl-layout__header-row top-bar fixed-top">
+        <div className="container justify-content-center">
+          <a className="navbar-brand" href="#">
+            {' '}
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
-          <ul
-            className={this.state.isOpen ? 'nav-links show-nav' : 'nav-links'}>
-            <button
-              className="btn btn-outline-primary"
-              style={{borderRadius: 50}}>
-              Say Hello
-            </button>
-          </ul>
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav mdl-navigation header-list">
+              <Link
+                className="pumpsoft mdl-navigation__link header-item"
+                to={ROUTES.HOME}
+                style={{padding: '20px'}}>
+                Homepage
+              </Link>
+              <a
+                className="mdl-navigation__link header-item"
+                href="https://riaratnaasari.wordpress.com/"
+                target="_blank"
+                style={{padding: '20px'}}>
+                My Thoughts
+              </a>
+
+              <a
+                className=" mdl-navigation__link header-item"
+                href={Resume}
+                onClick="openPDF()"
+                style={{padding: '20px'}}>
+                Resume
+              </a>
+            </div>
+          </div>
         </div>
       </nav>
     );
