@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import Resume from '../assets/resume.pdf';
 import './Header.css';
 import * as ROUTES from '../constants/Routes';
+import LOGO from '../images/logo.png';
 class Header extends Component {
   state = {
     isOpen: false,
@@ -18,10 +19,10 @@ class Header extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light mdl-layout__header-row top-bar fixed-top">
-        <div className="container justify-content-center">
-          <a className="navbar-brand" href="#">
-            {' '}
-          </a>
+        <div className="container">
+          {/* <a className="navbar-brand btn" href="#">
+            <img className="logo" src={LOGO} alt="logo" />
+          </a> */}
           <button
             className="navbar-toggler"
             type="button"

@@ -27,6 +27,11 @@ nav .mdl-navigation__link {
   margin-right: 30px;
 }
 
+.logo {
+  width: 50px;
+  height: 40px;
+}
+
 @media only screen and (min-width: 768px) {
   .mdl-navigation {
     margin-left: 20vw !important;
