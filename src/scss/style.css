@@ -1,0 +1,355 @@
+.profile-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #4a4a4a;
+  font-family: "Montserrat", sans-serif;
+}
+
+.profile-summary {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.profile-header {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.about-me-section {
+  margin-top: 40px;
+  margin-bottom: -120px;
+  padding-bottom: 120px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #f5a524;
+  font-family: "Montserrat", sans-serif;
+}
+
+.profile-intro {
+  margin: 20px;
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+}
+
+.foto-profile {
+  margin: 20px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.btn-outline-primary {
+  border-color: #f5a524;
+  color: #f5a524;
+}
+
+.skill-card {
+  width: 40%;
+  margin: 20px;
+  text-align: center;
+}
+
+.skill-component {
+  margin-left: 240px;
+  margin-right: 240px;
+}
+
+.card-title-bold {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  color: #4a4a4a;
+}
+
+.card-sub-title-bold {
+  font-size: 18px;
+  color: #f5a524;
+  padding: 20px;
+  font-weight: 400;
+}
+
+.space {
+  margin-top: 40px;
+}
+
+.contact-me {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f5a524;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-me-header {
+  color: white;
+  font-size: 24px;
+}
+
+.social-media-class {
+  margin-top: 40px;
+}
+
+.btn-social-media {
+  border-radius: 50%;
+  border-width: 1px;
+  width: 40px;
+  height: 40px;
+  margin: 6.66667px;
+}
+
+.recentwork-title {
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #4a4a4a;
+  font-family: "Montserrat", sans-serif;
+}
+
+.recentwork-summary {
+  font-size: 18px;
+  font-weight: 50%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.recent-work-card {
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.card-work {
+  width: 100%;
+  margin: 20px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card {
+  border: 1px solid white;
+}
+
+.btn-radius {
+  border-radius: 40px;
+}
+
+.title-work {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dribble {
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .profile-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a4a4a;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+  }
+  .profile-summary {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .profile-header {
+    font-size: 24px;
+  }
+  .container {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .contact-me {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .contact-me-header {
+    color: white;
+    font-size: 14px;
+  }
+  .btn-social-media {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+  .profile-intro {
+    margin: 10px;
+    font-size: 14px;
+    padding: 5px;
+  }
+  .project-description {
+    text-align: justify;
+    padding: 20px;
+  }
+  .project-detail-layout {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .project-detail-layout {
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+  .project-description {
+    text-align: justify;
+    padding: 40px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .project-info {
+    text-align: left;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .cover {
+    width: 100%;
+  }
+  .skill-card {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .skill-component {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .recentwork-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a4a4a;
+  }
+  .recentwork-summary {
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 50%;
+  }
+  .card-title-bold {
+    font-size: 18px;
+  }
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.px-1 {
+  margin: 0 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.mx-2 {
+  margin: 0 2rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.px-2 {
+  margin: 0 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.mx-3 {
+  margin: 0 3rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.px-3 {
+  margin: 0 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.mx-4 {
+  margin: 0 4rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.px-4 {
+  margin: 0 4rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.mx-5 {
+  margin: 0 5rem;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+.px-5 {
+  margin: 0 5rem;
+}
+/*# sourceMappingURL=style.css.map */

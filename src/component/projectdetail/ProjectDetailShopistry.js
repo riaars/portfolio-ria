@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import './ProjectDetail.css';
+import React, {Component} from './node_modules/react';
 
 class ProjectDetailShopistry extends Component {
   render() {

@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
-import './RecentWork.css';
-import foodbank from '../../images/foodbank.png';
-import bookio from '../../images/bookio.png';
-import shopistry from '../../images/shopistry.png';
-import harvesthaven from '../../images/harvesthavent.png';
-import climbingnets from '../../images/climbing-nets.png';
-import findrecipe from '../../images/find-recipe.png';
-import weatherforecast from '../../images/weather-forecast.png';
-import tapmusic from '../../images/tapmusic.png';
-import lyricfinder from '../../images/lyric-finder.png';
+
+import foodbank from '../images/foodbank.png';
+import bookio from '../images/bookio.png';
+import shopistry from '../images/shopistry.png';
+import harvesthaven from '../images/harvesthavent.png';
+import climbingnets from '../images/climbing-nets.png';
+import findrecipe from '../images/find-recipe.png';
+import weatherforecast from '../images/weather-forecast.png';
+import tapmusic from '../images/tapmusic.png';
+import lyricfinder from '../images/lyric-finder.png';
 import {Link} from 'react-router-dom';
-import * as ROUTES from '../../constants/Routes';
+import * as ROUTES from '../constants/Routes';
 
 class RecentWork extends Component {
   render() {
@@ -24,7 +24,7 @@ class RecentWork extends Component {
         <div className="recent-work-card">
           <div className="row justify-content-center">
             <div className="card card-work col-lg-3 col-md-3 col-sm-12">
-              <img src={foodbank} class="card-img-top" alt="..." />
+              <img src={foodbank} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h2 className="card-title title-work">FoodSharer</h2>
                 <p className="card-text">
@@ -35,13 +35,13 @@ class RecentWork extends Component {
                 <div className="space"></div>
                 <Link
                   to={ROUTES.PROJECT_DETAIL_FOODSHARER}
-                  class="btn btn-outline-primary btn-radius mt-auto">
+                  className="btn btn-outline-warning btn-radius mt-auto">
                   Visit Work
                 </Link>
               </div>
             </div>
             <div className="card card-work col-lg-3 col-md-3  col-sm-12">
-              <img src={bookio} class="card-img-top" alt="..." />
+              <img src={bookio} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Bookio</h5>
                 <p className="card-text">
@@ -53,13 +53,13 @@ class RecentWork extends Component {
 
                 <Link
                   to={ROUTES.PROJECT_DETAIL_BOOKIO}
-                  class="btn btn-outline-primary btn-radius mt-auto">
+                  className="btn btn-outline-warning btn-radius mt-auto">
                   Visit Work
                 </Link>
               </div>
             </div>
             <div className="card card-work col-lg-3 col-md-3 col-sm-12 ">
-              <img src={shopistry} class="card-img-top" alt="..." />
+              <img src={shopistry} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Shopistry</h5>
                 <p className="card-text">
@@ -69,13 +69,13 @@ class RecentWork extends Component {
                 <div className="space"></div>
                 <Link
                   to={ROUTES.PROJECT_DETAIL_SHOPISTRY}
-                  class="btn btn-outline-primary btn-radius mt-auto">
+                  className="btn btn-outline-warning btn-radius mt-auto">
                   Visit Work
                 </Link>
               </div>
             </div>
             <div className="card card-work col-lg-3 col-md-3  col-sm-12">
-              <img src={harvesthaven} class="card-img-top" alt="..." />
+              <img src={harvesthaven} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Harvest Haven</h5>
                 <div className="space"></div>
@@ -86,14 +86,14 @@ class RecentWork extends Component {
                 <div className="space"></div>
                 <Link
                   to={ROUTES.PROJECT_DETAIL_HARVEST}
-                  class="btn btn-outline-primary btn-radius mt-auto">
+                  className="btn btn-outline-warning btn-radius mt-auto">
                   Visit Work
                 </Link>
               </div>
             </div>
 
             <div className="card card-work col-lg-3 col-md-3  col-sm-12">
-              <img src={climbingnets} class="card-img-top" alt="..." />
+              <img src={climbingnets} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Climbing with Light</h5>
                 <div className="space"></div>
@@ -104,7 +104,7 @@ class RecentWork extends Component {
                 <div className="space"></div>
                 <a
                   href="https://vimeo.com/368869269"
-                  class="btn btn-outline-primary btn-radius mt-auto"
+                  className="btn btn-outline-warning btn-radius mt-auto"
                   target="_blank"
                   rel="noopener noreferrer">
                   Visit Work
@@ -113,7 +113,7 @@ class RecentWork extends Component {
             </div>
 
             <div className="card card-work col-lg-3 col-md-3  col-sm-12">
-              <img src={findrecipe} class="card-img-top" alt="..." />
+              <img src={findrecipe} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Find the Recipes</h5>
                 <div className="space"></div>
@@ -125,14 +125,14 @@ class RecentWork extends Component {
                   href="https://deliciousy.netlify.com//"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="btn btn-outline-primary btn-radius mt-auto">
+                  className="btn btn-outline-warning btn-radius mt-auto">
                   Visit Work
                 </a>
               </div>
             </div>
 
             <div className="card card-work col-lg-3 col-md-3  col-sm-12">
-              <img src={lyricfinder} class="card-img-top" alt="..." />
+              <img src={lyricfinder} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Song Lyrics</h5>
                 <div className="space"></div>
@@ -145,14 +145,14 @@ class RecentWork extends Component {
                   href="https://singsong.netlify.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="btn btn-outline-primary btn-radius mt-auto">
+                  className="btn btn-outline-warning btn-radius mt-auto">
                   Visit Work
                 </a>
               </div>
             </div>
 
             <div className="card card-work col-lg-3 col-md-3  col-sm-12">
-              <img src={tapmusic} class="card-img-top" alt="..." />
+              <img src={tapmusic} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Colorful Music</h5>
                 <div className="space"></div>
@@ -165,13 +165,13 @@ class RecentWork extends Component {
                   href="https://tapmenow.netlify.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="btn btn-outline-primary btn-radius mt-auto">
+                  className="btn btn-outline-warning btn-radius mt-auto">
                   Visit Work
                 </a>
               </div>
             </div>
             <div className="card card-work col-lg-3 col-md-3  col-sm-12">
-              <img src={weatherforecast} class="card-img-top" alt="..." />
+              <img src={weatherforecast} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Weather Forecast</h5>
                 <div className="space"></div>
@@ -183,20 +183,34 @@ class RecentWork extends Component {
                   href="https://weatheri.netlify.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="btn btn-outline-primary btn-radius mt-auto">
+                  className="btn btn-outline-warning btn-radius mt-auto">
                   Visit Work
                 </a>
               </div>
             </div>
           </div>
-
           <div className="space"></div>
-          <div className="dribble">
+          {/* <div className="dribble">
             <a
               href="https://dribbble.com/rrsari"
-              class="btn btn-outline-primary btn-radius">
-              <i class="fab fa-dribbble space-right" aria-hidden="true"></i>
-              See More on Dribble
+              className="btn btn-outline-primary btn-radius">
+              <i
+                className="fab fa-dribbble space-right"
+                aria-hidden="true"
+                style={{marginRight: '10px'}}></i>
+              See More on Dribbble
+            </a>
+          </div> */}
+
+          <div className="github">
+            <a
+              href="https://github.com/riaars"
+              className="btn btn-outline-warning btn-radius">
+              <i
+                className="fab fa-github space-right"
+                aria-hidden="true"
+                style={{marginRight: '10px'}}></i>
+              See More on Github
             </a>
           </div>
         </div>

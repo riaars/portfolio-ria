@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import Skill from './component/skill/Skill';
-import RecentWork from './component/recentwork/RecentWork';
-import SocialMedia from './component/socialmedia/SocialMedia';
-import Profile from './component/profile/Profile';
+import './scss/style.css';
+import Skill from './component/Skill';
+import RecentWork from './component/RecentWork';
+import SocialMedia from './component/SocialMedia';
+import Profile from './component/Profile';
 
 function App() {
   return (

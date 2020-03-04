@@ -1,0 +1,154 @@
+$light-background: white;
+$theme-color: #f5a524;
+// $theme-color: #ff7474;
+$font: 'Montserrat', sans-serif;
+$font-title: 40px;
+$font-header: 24px;
+$font-content: 18px;
+$lg-space: 120px;
+$m-space: 40px;
+$sm-space: 20px;
+$font-color: #4a4a4a;
+
+.profile-title {
+  font-size: $font-title;
+  font-weight: bold;
+  color: $font-color;
+  font-family: $font;
+}
+
+.profile-summary {
+  font-size: $font-header;
+  font-family: $font;
+}
+
+.profile-header {
+  font-size: $font-title;
+  font-weight: bold;
+  color: $light-background;
+}
+.about-me-section {
+  margin-top: $m-space;
+  margin-bottom: -$lg-space;
+  padding-bottom: $m-space * 3;
+  padding-top: $m-space;
+  padding-left: $m-space;
+  padding-right: $m-space;
+  background-color: $theme-color;
+  font-family: $font;
+}
+
+.profile-intro {
+  margin: $sm-space;
+  font-size: $font-content;
+  padding: $sm-space/2;
+  color: $light-background;
+}
+
+.foto-profile {
+  margin: $sm-space;
+  width: $lg-space * 1.5;
+  height: $lg-space * 1.5;
+  border-radius: 50%;
+}
+
+.btn-outline-primary {
+  border-color: $theme-color;
+  color: $theme-color;
+}
+
+.skill-card {
+  width: 40%;
+  margin: $sm-space;
+  text-align: center;
+}
+
+.skill-component {
+  margin-left: $lg-space * 2;
+  margin-right: $lg-space * 2;
+}
+.card-title-bold {
+  font-size: $font-header;
+  font-weight: bold;
+  padding: $sm-space;
+  color: $font-color;
+}
+
+.card-sub-title-bold {
+  font-size: $font-content;
+  color: $theme-color;
+  padding: $sm-space;
+  font-weight: 400;
+}
+.space {
+  margin-top: $m-space;
+}
+
+.contact-me {
+  margin-top: $m-space;
+  padding: $sm-space;
+  background-color: $theme-color;
+  font-family: $font;
+}
+
+.contact-me-header {
+  color: $light-background;
+  font-size: $font-header;
+}
+
+.social-media-class {
+  margin-top: $m-space;
+}
+.btn-social-media {
+  border-radius: 50%;
+  border-width: 1px;
+  width: $m-space;
+  height: $m-space;
+  margin: $sm-space/3;
+}
+
+.recentwork-title {
+  margin-top: $m-space;
+  font-size: $font-title;
+  font-weight: bold;
+  color: $font-color;
+  font-family: $font;
+}
+
+.recentwork-summary {
+  font-size: $font-content;
+  font-weight: 50%;
+  font-family: $font;
+}
+
+.recent-work-card {
+  padding: $sm-space;
+  margin: auto;
+  text-align: center;
+}
+.card-work {
+  width: 100%;
+  margin: $sm-space;
+  padding: 0px;
+  font-family: $font;
+}
+
+.card {
+  border: 1px solid $light-background;
+}
+
+.btn-radius {
+  border-radius: $m-space;
+}
+
+.title-work {
+  font-size: $font-content;
+  font-weight: bold;
+}
+
+.dribble {
+  padding: $m-space;
+}
+
+@import 'mobile';
+@import 'config';
