@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import ProjectDetail from './component/projectdetail/ProjectDetail';
-import ProjectDetailBookio from './component/projectdetail/ProjectDetailBookio';
-import ProjectDetailShopistry from './component/projectdetail/ProjectDetailShopistry';
-import ProjectDetailHarvest from './component/projectdetail/ProjectDetailHarvest';
+import ProjectDetailFood from './component/ProjectDetail/ProjectDetailFood';
+import ProjectDetailBookio from './component/ProjectDetail/ProjectDetailBookio';
+import ProjectDetailShopistry from './component/ProjectDetail/ProjectDetailShopistry';
+import ProjectDetailHarvest from './component/ProjectDetail/ProjectDetailHarvest';
 import * as ROUTES from './constants/Routes';
 import App from './App';
 import Header from '../src/component/Header';
@@ -15,7 +15,7 @@ const AppBase = () => (
       <Route
         exact
         path={ROUTES.PROJECT_DETAIL_FOODSHARER}
-        render={() => <ProjectDetail />}
+        render={() => <ProjectDetailFood />}
       />
       <Route
         exact

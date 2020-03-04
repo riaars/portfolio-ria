@@ -1,6 +1,6 @@
-import React, {Component} from './node_modules/react';
+import React, {Component} from 'react';
 
-class ProjectDetail extends Component {
+class ProjectDetailFood extends Component {
   render() {
     return (
       <React.Fragment>
@@ -146,4 +146,4 @@ class ProjectDetail extends Component {
   }
 }
 
-export default ProjectDetail;
+export default ProjectDetailFood;
