@@ -15,15 +15,19 @@ import * as ROUTES from '../constants/Routes';
 class RecentWork extends Component {
   render() {
     return (
-      <div>
-        <div className="recentwork-title">My recent work</div>
+      <div id="portfolio">
+        <div className="recentwork-title">Portfolio</div>
         <div className="recentwork-summary">
-          Here are a few recent design projects. Want to see more?Email me!{' '}
+          Here are a few recent design projects. Want to see more? Email me!{' '}
           <a href="#">riaratnasari@outlook.com</a>
         </div>
-        <div className="recent-work-card">
+        <div className="recent-work-card ">
           <div className="row justify-content-center">
-            <div className="card card-work col-lg-3 col-md-3 col-sm-12">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              className="card card-work col-lg-3 col-md-3 col-sm-12">
               <img src={foodbank} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h2 className="card-title title-work">FoodSharer</h2>
@@ -36,11 +40,15 @@ class RecentWork extends Component {
                 <Link
                   to={ROUTES.PROJECT_DETAIL_FOODSHARER}
                   className="btn btn-outline-warning btn-radius mt-auto">
-                  Visit Work
+                  Read More
                 </Link>
               </div>
             </div>
-            <div className="card card-work col-lg-3 col-md-3  col-sm-12">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              className="card card-work col-lg-3 col-md-3  col-sm-12">
               <img src={bookio} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Bookio</h5>
@@ -53,12 +61,23 @@ class RecentWork extends Component {
 
                 <Link
                   to={ROUTES.PROJECT_DETAIL_BOOKIO}
-                  className="btn btn-outline-warning btn-radius mt-auto">
-                  Visit Work
+                  className="btn btn-outline-warning btn-radius mt-auto ">
+                  Read More
                 </Link>
+                {/* <a
+                  href="https://vimeo.com/368869269"
+                  className="btn btn-outline-warning btn-radius mt-auto"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Visit Website
+                </a> */}
               </div>
             </div>
-            <div className="card card-work col-lg-3 col-md-3 col-sm-12 ">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              className="card card-work col-lg-3 col-md-3 col-sm-12 ">
               <img src={shopistry} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Shopistry</h5>
@@ -70,53 +89,79 @@ class RecentWork extends Component {
                 <Link
                   to={ROUTES.PROJECT_DETAIL_SHOPISTRY}
                   className="btn btn-outline-warning btn-radius mt-auto">
-                  Visit Work
+                  Read More
                 </Link>
               </div>
             </div>
-            <div className="card card-work col-lg-3 col-md-3  col-sm-12">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              className="card card-work col-lg-3 col-md-3  col-sm-12">
               <img src={harvesthaven} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Harvest Haven</h5>
-                <div className="space"></div>
+
                 <p className="card-text">
                   Harvest Haven is an agri-tourism platform that enable urban
                   citizen to have farming experiences while traveling.
                 </p>
                 <div className="space"></div>
+
                 <Link
                   to={ROUTES.PROJECT_DETAIL_HARVEST}
                   className="btn btn-outline-warning btn-radius mt-auto">
-                  Visit Work
+                  Read More
                 </Link>
+                {/* <a
+                  href="https://vimeo.com/368869269"
+                  className="btn btn-outline-warning btn-radius mt-auto "
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Visit Website
+                </a> */}
               </div>
             </div>
 
-            <div className="card card-work col-lg-3 col-md-3  col-sm-12">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              className="card card-work col-lg-3 col-md-3  col-sm-12">
               <img src={climbingnets} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Climbing with Light</h5>
-                <div className="space"></div>
+
                 <p className="card-text">
                   An interactive climbing nets with light and sound for dark
                   winter playground in Sweden
                 </p>
                 <div className="space"></div>
-                <a
+
+                <Link
+                  to={ROUTES.PROJECT_DETAIL_CLIMBING}
+                  className="btn btn-outline-warning btn-radius mt-auto ">
+                  Read More
+                </Link>
+                {/* <a
                   href="https://vimeo.com/368869269"
                   className="btn btn-outline-warning btn-radius mt-auto"
                   target="_blank"
                   rel="noopener noreferrer">
-                  Visit Work
-                </a>
+                  Watch Video
+                </a> */}
               </div>
             </div>
 
-            <div className="card card-work col-lg-3 col-md-3  col-sm-12">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              className="card card-work col-lg-3 col-md-3  col-sm-12">
               <img src={findrecipe} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Find the Recipes</h5>
-                <div className="space"></div>
+
                 <p className="card-text">
                   A Website to find the awesome recipes
                 </p>
@@ -126,16 +171,20 @@ class RecentWork extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-outline-warning btn-radius mt-auto">
-                  Visit Work
+                  Read More
                 </a>
               </div>
             </div>
 
-            <div className="card card-work col-lg-3 col-md-3  col-sm-12">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              className="card card-work col-lg-3 col-md-3  col-sm-12">
               <img src={lyricfinder} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Song Lyrics</h5>
-                <div className="space"></div>
+
                 <p className="card-text">
                   React web application to find the song title based on lyrics
                   and vice versa
@@ -146,16 +195,20 @@ class RecentWork extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-outline-warning btn-radius mt-auto">
-                  Visit Work
+                  Read More
                 </a>
               </div>
             </div>
 
-            <div className="card card-work col-lg-3 col-md-3  col-sm-12">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              className="card card-work col-lg-3 col-md-3  col-sm-12">
               <img src={tapmusic} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Colorful Music</h5>
-                <div className="space"></div>
+
                 <p className="card-text">
                   Create a music by typing and selecting the color. Developed by
                   using Vanilla Javascript
@@ -166,15 +219,19 @@ class RecentWork extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-outline-warning btn-radius mt-auto">
-                  Visit Work
+                  Read More
                 </a>
               </div>
             </div>
-            <div className="card card-work col-lg-3 col-md-3  col-sm-12">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              className="card card-work col-lg-3 col-md-3  col-sm-12">
               <img src={weatherforecast} className="card-img-top" alt="..." />
               <div className="card-body d-flex flex-column">
                 <h5 className="card-title title-work">Weather Forecast</h5>
-                <div className="space"></div>
+
                 <p className="card-text">
                   A weather prediction developed using Vanilla Javascript
                 </p>
@@ -184,7 +241,7 @@ class RecentWork extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-outline-warning btn-radius mt-auto">
-                  Visit Work
+                  Read More
                 </a>
               </div>
             </div>
@@ -202,7 +259,11 @@ class RecentWork extends Component {
             </a>
           </div> */}
 
-          <div className="github">
+          <div
+            data-aos="fade-up-right"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+            className="github">
             <a
               href="https://github.com/riaars"
               className="btn btn-outline-warning btn-radius">

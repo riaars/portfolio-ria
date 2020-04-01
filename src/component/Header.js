@@ -31,25 +31,33 @@ class Header extends Component {
             <div className="navbar-nav mdl-navigation header-list">
               <Link
                 className=" mdl-navigation__link header-item"
-                to={ROUTES.HOME}
-                style={{padding: '20px'}}>
+                to={ROUTES.HOME}>
                 Homepage
               </Link>
+
+              <a
+                href="#portfolio"
+                className=" mdl-navigation__link header-item">
+                Portfolio
+              </a>
+
+              <a href="#about-me" className=" mdl-navigation__link header-item">
+                About Me
+              </a>
+
               <a
                 className="mdl-navigation__link header-item"
                 href="https://riaratnaasari.wordpress.com/"
                 target="_blank"
-                rel="noopener noreferrer"
-                style={{padding: '20px'}}>
-                My Thoughts
+                rel="noopener noreferrer">
+                Personal Blog
               </a>
 
               <a
                 className="mdl-navigation__link header-item"
                 href={Resume}
                 target="_blank"
-                rel="noopener noreferrer"
-                style={{padding: '20px'}}>
+                rel="noopener noreferrer">
                 Resume
               </a>
             </div>

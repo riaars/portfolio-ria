@@ -5,13 +5,16 @@ import Skill from './component/Skill';
 import RecentWork from './component/RecentWork';
 import SocialMedia from './component/SocialMedia';
 import Profile from './component/Profile';
+import AboutMe from './component/AboutMe';
 
 function App() {
   return (
     <div className="App" id="#home">
       <Profile />
-      <Skill />
       <RecentWork />
+      <AboutMe />
+      <Skill />
+
       <SocialMedia />
     </div>
   );

@@ -5,6 +5,7 @@ import ProjectDetailFood from './component/projectdetail/ProjectDetailFood';
 import ProjectDetailBookio from './component/projectdetail/ProjectDetailBookio';
 import ProjectDetailShopistry from './component/projectdetail/ProjectDetailShopistry';
 import ProjectDetailHarvest from './component/projectdetail/ProjectDetailHarvest';
+import ProjectDetailClimbingLight from './component/projectdetail/ProjectDetailClimbingLight';
 import * as ROUTES from './constants/Routes';
 import App from './App';
 import Header from '../src/component/Header';
@@ -31,6 +32,11 @@ const AppBase = () => (
         exact
         path={ROUTES.PROJECT_DETAIL_HARVEST}
         render={() => <ProjectDetailHarvest />}
+      />
+      <Route
+        exact
+        path={ROUTES.PROJECT_DETAIL_CLIMBING}
+        render={() => <ProjectDetailClimbingLight />}
       />
       <Route exact path={ROUTES.HOME} render={() => <App />} />
     </Switch>

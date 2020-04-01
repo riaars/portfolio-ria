@@ -19,27 +19,42 @@ class SocialMedia extends Component {
           <p>
             <button className="btn-social-media">
               <a href="https://www.facebook.com/rrsari25">
-                <i className="fab fa-linkedin" aria-hidden="true"></i>
+                <i
+                  className="fab fa-linkedin"
+                  style={{color: '#ffffff'}}
+                  aria-hidden="true"></i>
               </a>
             </button>
             <button className="btn-social-media">
               <a href="https://twitter.com/riaa_rs">
-                <i className="fab fa-twitter" aria-hidden="true"></i>
+                <i
+                  className="fab fa-twitter"
+                  style={{color: '#ffffff'}}
+                  aria-hidden="true"></i>
               </a>
             </button>
             <button className="btn-social-media">
               <a href="https://github.com/riaars">
-                <i className="fab fa-github" aria-hidden="true"></i>
+                <i
+                  className="fab fa-github"
+                  style={{color: '#ffffff'}}
+                  aria-hidden="true"></i>
               </a>
             </button>
             <button className="btn-social-media">
               <a href="https://www.facebook.com/rrsari25">
-                <i className="fab fa-facebook" aria-hidden="true"></i>
+                <i
+                  className="fab fa-facebook"
+                  style={{color: '#ffffff'}}
+                  aria-hidden="true"></i>
               </a>
             </button>
             <button className="btn-social-media">
               <a href="https://dribbble.com/rrsari">
-                <i className="fab fa-dribbble" aria-hidden="true"></i>
+                <i
+                  className="fab fa-dribbble"
+                  style={{color: '#ffffff'}}
+                  aria-hidden="true"></i>
               </a>
             </button>
           </p>

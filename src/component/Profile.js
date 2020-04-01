@@ -7,56 +7,69 @@ library.add(faFacebookF);
 class Profile extends Component {
   render() {
     return (
-      <div style={{marginTop: 100}}>
-        <div className="profile-title">Designer and Front-End Developer</div>
-        <div className="profile-summary">I design and code beautifully</div>
-        <img
-          className="foto-profile"
-          src={require('../images/profile-ria.jpeg')}
-          alt="foto-me"
-        />
+      <div>
+        <div className="top-profile row">
+          <img
+            className="foto-profile"
+            src={require('../images/ria.svg')}
+            alt="foto-me"
+          />
+          <div className="profile">
+            <div
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              className="profile-title">
+              RIA RATNA SARI
+            </div>
+            <div
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              className="profile-summary">
+              passionate designer and developer
+            </div>
 
-        <div className="social-media-class">
-          <p>
-            <button className="btn-social-media">
-              <a href="https://www.facebook.com/rrsari25">
-                <i className="fab fa-linkedin" aria-hidden="true"></i>
-              </a>
-            </button>
-            <button className="btn-social-media">
-              <a href="https://twitter.com/riaa_rs">
-                <i className="fab fa-twitter" aria-hidden="true"></i>
-              </a>
-            </button>
-            <button className="btn-social-media">
-              <a href="https://github.com/riaars">
-                <i className="fab fa-github" aria-hidden="true"></i>
-              </a>
-            </button>
-            <button className="btn-social-media">
-              <a href="https://www.facebook.com/rrsari25">
-                <i className="fab fa-facebook" aria-hidden="true"></i>
-              </a>
-            </button>
-            <button className="btn-social-media">
-              <a href="https://dribbble.com/rrsari">
-                <i className="fab fa-dribbble" aria-hidden="true"></i>
-              </a>
-            </button>
-          </p>
-        </div>
-        <div className="about-me-section">
-          <div className="profile-header">
-            Hi, I'm Ria. Thank you for visiting.
-          </div>
-          <div className="profile-intro">
-            I have 3+ years of professional experiences in Information and
-            Technology field. My expertise including Product Management, UI
-            design, UX research, Front-End Development, and Mobile application.
-            I enjoy generating new ideas and devising feasible solutions for
-            broadly relevant problems. My colleagues would describe me as a
-            resourceful individual, self-motivated, and proactive attitude when
-            faced adversity.
+            <div className="social-media-class">
+              <p>
+                <button
+                  data-aos="fade-up-right"
+                  data-aos-delay="1000"
+                  data-aos-duration="800"
+                  className="btn-social-media">
+                  <a href="https://github.com/riaars">
+                    <i
+                      className="fab fa-github"
+                      style={{color: '#ffffff'}}
+                      aria-hidden="true"></i>
+                  </a>
+                </button>
+                <button
+                  data-aos="fade-up-right"
+                  data-aos-delay="1300"
+                  data-aos-duration="800"
+                  className="btn-social-media">
+                  <a href="https://www.facebook.com/rrsari25">
+                    <i
+                      className="fab fa-facebook"
+                      style={{color: '#ffffff'}}
+                      aria-hidden="true"></i>
+                  </a>
+                </button>
+                <button
+                  data-aos="fade-up-right"
+                  data-aos-delay="1600"
+                  data-aos-duration="800"
+                  className="btn-social-media">
+                  <a href="https://dribbble.com/rrsari">
+                    <i
+                      className="fab fa-dribbble"
+                      style={{color: '#ffffff'}}
+                      aria-hidden="true"></i>
+                  </a>
+                </button>
+              </p>
+            </div>
           </div>
         </div>
       </div>

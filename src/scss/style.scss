@@ -1,6 +1,6 @@
 $light-background: white;
 $theme-color: #f5a524;
-// $theme-color: #ff7474;
+// $theme-color: #8991e0;
 $font: 'Montserrat', sans-serif;
 $font-title: 40px;
 $font-header: 24px;
@@ -10,46 +10,59 @@ $m-space: 40px;
 $sm-space: 20px;
 $font-color: #4a4a4a;
 
+.top-profile {
+  background-color: $theme-color;
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  margin-left: 100px;
+}
 .profile-title {
-  font-size: $font-title;
+  font-size: $font-title * 2;
   font-weight: bold;
-  color: $font-color;
+  color: white;
   font-family: $font;
 }
 
 .profile-summary {
-  font-size: $font-header;
+  font-size: $font-header * 1.5;
   font-family: $font;
+  color: white;
 }
 
 .profile-header {
   font-size: $font-title;
   font-weight: bold;
-  color: $light-background;
+  color: $font-color;
+  text-align: left;
+  margin-left: 100px;
 }
 .about-me-section {
   margin-top: $m-space;
-  margin-bottom: -$lg-space;
-  padding-bottom: $m-space * 3;
-  padding-top: $m-space;
-  padding-left: $m-space;
-  padding-right: $m-space;
-  background-color: $theme-color;
   font-family: $font;
 }
 
+.about-me {
+  display: flex;
+  align-items: center;
+}
+
 .profile-intro {
-  margin: $sm-space;
+  margin-left: 100px;
   font-size: $font-content;
   padding: $sm-space/2;
-  color: $light-background;
+  color: $font-color;
+  text-align: left;
+  margin-right: 100px;
 }
 
 .foto-profile {
-  margin: $sm-space;
-  width: $lg-space * 1.5;
-  height: $lg-space * 1.5;
-  border-radius: 50%;
+  margin-top: $lg-space;
+  margin-left: -50px;
+  width: 600px;
+  height: auto;
 }
 
 .btn-outline-primary {
@@ -102,6 +115,8 @@ $font-color: #4a4a4a;
 .btn-social-media {
   border-radius: 50%;
   border-width: 1px;
+  border-color: white;
+  background-color: $theme-color;
   width: $m-space;
   height: $m-space;
   margin: $sm-space/3;
@@ -113,12 +128,16 @@ $font-color: #4a4a4a;
   font-weight: bold;
   color: $font-color;
   font-family: $font;
+  text-align: left;
+  margin-left: 100px;
 }
 
 .recentwork-summary {
   font-size: $font-content;
   font-weight: 50%;
   font-family: $font;
+  text-align: left;
+  margin-left: 100px;
 }
 
 .recent-work-card {
@@ -148,6 +167,10 @@ $font-color: #4a4a4a;
 
 .dribble {
   padding: $m-space;
+}
+
+.icon-skill {
+  padding: 20px;
 }
 
 @import 'mobile';
