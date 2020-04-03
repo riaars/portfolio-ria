@@ -14,8 +14,6 @@ function App() {
       <RecentWork />
       <AboutMe />
       <Skill />
-
-      <SocialMedia />
     </div>
   );
 }

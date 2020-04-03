@@ -4,7 +4,7 @@ import foodbank from '../images/foodbank.png';
 import bookio from '../images/bookio.png';
 import shopistry from '../images/shopistry.png';
 import harvesthaven from '../images/harvesthavent.png';
-import climbingnets from '../images/climbing-nets.png';
+import climbingnets from '../images/final-prototype.svg';
 import findrecipe from '../images/find-recipe.png';
 import weatherforecast from '../images/weather-forecast.png';
 import tapmusic from '../images/tapmusic.png';

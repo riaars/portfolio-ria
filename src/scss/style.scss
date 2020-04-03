@@ -107,10 +107,12 @@ $font-color: #4a4a4a;
 .contact-me-header {
   color: $light-background;
   font-size: $font-header;
+  text-align: center;
 }
 
 .social-media-class {
   margin-top: $m-space;
+  text-align: center;
 }
 .btn-social-media {
   border-radius: 50%;
@@ -173,5 +175,25 @@ $font-color: #4a4a4a;
   padding: 20px;
 }
 
+.detail-content {
+  font-size: 16px;
+  text-align: justify;
+}
+.detail-header {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.project-image {
+  padding: 20px;
+  text-align: center;
+}
+
+.video-climbing-net {
+  padding-top: 20px;
+  height: auto;
+  text-align: center;
+}
 @import 'mobile';
 @import 'config';

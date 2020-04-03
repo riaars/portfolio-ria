@@ -9,6 +9,9 @@ import ProjectDetailClimbingLight from './component/projectdetail/ProjectDetailC
 import * as ROUTES from './constants/Routes';
 import App from './App';
 import Header from '../src/component/Header';
+import SocialMedia from './component/SocialMedia';
+import './scss/style.css';
+import './App.css';
 
 const AppBase = () => (
   <div className="container-body">
@@ -47,6 +50,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Header />
     <AppBase />
+    <SocialMedia />
   </BrowserRouter>,
   document.getElementById('root')
 );
