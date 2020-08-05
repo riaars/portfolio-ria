@@ -13,7 +13,154 @@ import {Link} from 'react-router-dom';
 import * as ROUTES from '../constants/Routes';
 
 class RecentWork extends Component {
+  state = {
+    currentType: 'All',
+    works: [
+      {
+        id: 1,
+        title: 'Food Sharer',
+        cover: foodbank,
+        descrption:
+          'Foodsharer is a propose solution platform to enable the connectness between food bank staff with charity organization in Sweden to reduce food waste.',
+        project_link: '/foodsharer',
+        project_web: '#',
+        type: ['All', 'Design'],
+      },
+
+      {
+        id: 2,
+        title: 'BookIO',
+        cover: bookio,
+        descrption:
+          'Bookio is a sharing book platform to allow the customer to get, lend, borrow, or give book to someone else in order to maintain sustainability while increasing the literacy.',
+        project_link: '/bookio',
+        project_web: '#',
+        type: ['All', 'Web Development'],
+      },
+      {
+        id: 3,
+        title: 'Shopistry',
+        cover: shopistry,
+        descrption:
+          'Shopistry is a mobile platform to help mystery shoppers to perform the tasks onsite without suspicious.',
+        project_link: '/shopistry',
+        project_web: '#',
+        type: ['All', 'Design'],
+      },
+
+      {
+        id: 4,
+        title: 'Harvest Haven',
+        cover: harvesthaven,
+        descrption:
+          'Harvest Haven is an agri-tourism platform that enable urban citizen to have farming experiences while traveling.',
+        project_link: '/harvest',
+        project_web: '#',
+        type: ['All', 'Web Development'],
+      },
+
+      {
+        id: 5,
+        title: 'Climbing with Light',
+        cover: climbingnets,
+        descrption:
+          ' An interactive climbing nets with light and sound for dark winter playground in Sweden.',
+        project_link: '/climbing-light',
+        project_web: '#',
+        type: ['All', 'Physical Interaction'],
+      },
+
+      {
+        id: 6,
+        title: 'Find Lyrics',
+        cover: lyricfinder,
+        descrption:
+          'React web application to find the song title based on lyrics and vice versa',
+        project_link: 'https://singsong.netlify.com/',
+        project_web: '#',
+        type: ['All', 'Web Development'],
+      },
+
+      {
+        id: 7,
+        title: 'Tap Music',
+        cover: tapmusic,
+        descrption:
+          'Create a music by typing and selecting the color. Developed by using Vanilla Javascript',
+        project_link: '',
+        project_web: 'https://tapmenow.netlify.com/',
+        type: ['All', 'Web Development'],
+      },
+
+      {
+        id: 8,
+        title: 'Weather Forecast',
+        cover: weatherforecast,
+        descrption: 'A weather prediction developed using Vanilla Javascript',
+        project_link: '',
+        project_web: 'https://weatheri.netlify.com/',
+        type: ['All', 'Web Development'],
+      },
+
+      {
+        id: 9,
+        title: 'Find Recipe',
+        cover: findrecipe,
+        descrption: 'What to cook today? Find the recipe here',
+        project_link: '',
+        project_web: 'https://deliciousy.netlify.com/',
+        type: ['All', 'Web Development'],
+      },
+    ],
+  };
+
+  renderItemWork = (item) => {
+    return (
+      <div
+        data-aos="zoom-in-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        className="card card-work col-lg-3 col-md-3 col-sm-12">
+        <img src={item.cover} className="card-img-top" alt="..." />
+
+        <div className="card-body d-flex flex-column">
+          <h2 className="card-title title-work">{item.title}</h2>
+          <p className="card-text">{item.descrption}</p>
+          <div className="space"></div>
+
+          <div class="row mt-auto ml-auto mr-auto">
+            <a
+              href={item.project_web}
+              target="_blank"
+              className="btn btn-outline-warning btn-radius mr-1 ">
+              Visit Website
+            </a>
+
+            <Link
+              to={item.project_link}
+              className="btn btn-outline-warning btn-radius ml-1">
+              Read More
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  filterItem = (type) => {
+    console.log(type);
+    this.setState({currentType: type});
+    let itemList = this.state.works.filter((result) => result.type === type);
+    console.log(itemList);
+  };
+
+  selectedMenu = (menu) => {
+    if (this.state.currentType === menu) {
+      return '#ffc107';
+    }
+  };
   render() {
+    console.log(this.state);
     return (
       <div id="portfolio">
         <div className="recentwork-title">Portfolio</div>
@@ -21,243 +168,52 @@ class RecentWork extends Component {
           Here are a few recent design projects. Want to see more? Email me!{' '}
           <a href="#">riaratnasari@outlook.com</a>
         </div>
-        <div className="recent-work-card ">
-          <div className="row justify-content-center">
-            <div
-              data-aos="zoom-in-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              className="card card-work col-lg-3 col-md-3 col-sm-12">
-              <img src={foodbank} className="card-img-top" alt="..." />
-              <div className="card-body d-flex flex-column">
-                <h2 className="card-title title-work">FoodSharer</h2>
-                <p className="card-text">
-                  Foodsharer is a propose solution platform to enable the
-                  connectness between food bank staff with charity organization
-                  in Sweden to reduce food waste.
-                </p>
-                <div className="space"></div>
-                <Link
-                  to={ROUTES.PROJECT_DETAIL_FOODSHARER}
-                  className="btn btn-outline-warning btn-radius mt-auto">
-                  Read More
-                </Link>
-              </div>
-            </div>
-            <div
-              data-aos="zoom-in-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              className="card card-work col-lg-3 col-md-3  col-sm-12">
-              <img src={bookio} className="card-img-top" alt="..." />
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title title-work">Bookio</h5>
-                <p className="card-text">
-                  Bookio is a sharing book platform to allow the customer to
-                  get, lend, borrow, or give book to someone else in order to
-                  maintain sustainability while increasing the literacy.
-                </p>
-                <div className="space"></div>
+        <div className="row" style={{marginLeft: '100px', marginTop: '50px'}}>
+          <button
+            style={{backgroundColor: this.selectedMenu('All')}}
+            class="btn m-2"
+            name="All"
+            onClick={this.filterItem.bind(this, 'All')}>
+            All
+          </button>
+          <button
+            style={{backgroundColor: this.selectedMenu('Design')}}
+            class="btn m-2"
+            onClick={this.filterItem.bind(this, 'Design')}>
+            Design
+          </button>
 
-                <Link
-                  to={ROUTES.PROJECT_DETAIL_BOOKIO}
-                  className="btn btn-outline-warning btn-radius mt-auto ">
-                  Read More
-                </Link>
-                {/* <a
-                  href="https://vimeo.com/368869269"
-                  className="btn btn-outline-warning btn-radius mt-auto"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  Visit Website
-                </a> */}
-              </div>
-            </div>
-            <div
-              data-aos="zoom-in-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              className="card card-work col-lg-3 col-md-3 col-sm-12 ">
-              <img src={shopistry} className="card-img-top" alt="..." />
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title title-work">Shopistry</h5>
-                <p className="card-text">
-                  Shopistry is a mobile platform to help mystery shoppers to
-                  perform the tasks onsite without suspicious.
-                </p>
-                <div className="space"></div>
-                <Link
-                  to={ROUTES.PROJECT_DETAIL_SHOPISTRY}
-                  className="btn btn-outline-warning btn-radius mt-auto">
-                  Read More
-                </Link>
-              </div>
-            </div>
-            <div
-              data-aos="zoom-in-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              className="card card-work col-lg-3 col-md-3  col-sm-12">
-              <img src={harvesthaven} className="card-img-top" alt="..." />
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title title-work">Harvest Haven</h5>
+          <button
+            style={{backgroundColor: this.selectedMenu('Web Development')}}
+            class="btn m-2"
+            onClick={this.filterItem.bind(this, 'Web Development')}>
+            Web Development
+          </button>
 
-                <p className="card-text">
-                  Harvest Haven is an agri-tourism platform that enable urban
-                  citizen to have farming experiences while traveling.
-                </p>
-                <div className="space"></div>
+          <button
+            style={{backgroundColor: this.selectedMenu('Mobile Development')}}
+            class="btn m-2"
+            onClick={this.filterItem.bind(this, 'Mobile Development')}>
+            Mobile Development
+          </button>
 
-                <Link
-                  to={ROUTES.PROJECT_DETAIL_HARVEST}
-                  className="btn btn-outline-warning btn-radius mt-auto">
-                  Read More
-                </Link>
-                {/* <a
-                  href="https://vimeo.com/368869269"
-                  className="btn btn-outline-warning btn-radius mt-auto "
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  Visit Website
-                </a> */}
-              </div>
-            </div>
+          <button
+            style={{backgroundColor: this.selectedMenu('Physical Interaction')}}
+            class="btn m-2"
+            onClick={this.filterItem.bind(this, 'Physical Interaction')}>
+            Physical Interaction
+          </button>
+        </div>
+        <div className="recent-work-card" style={{marginLeft: '100px'}}>
+          <div className="row">
+            {/* {this.state.works.map((item) => this.renderItemWork(item))} */}
 
-            <div
-              data-aos="zoom-in-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              className="card card-work col-lg-3 col-md-3  col-sm-12">
-              <img src={climbingnets} className="card-img-top" alt="..." />
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title title-work">Climbing with Light</h5>
-
-                <p className="card-text">
-                  An interactive climbing nets with light and sound for dark
-                  winter playground in Sweden
-                </p>
-                <div className="space"></div>
-
-                <Link
-                  to={ROUTES.PROJECT_DETAIL_CLIMBING}
-                  className="btn btn-outline-warning btn-radius mt-auto ">
-                  Read More
-                </Link>
-                {/* <a
-                  href="https://vimeo.com/368869269"
-                  className="btn btn-outline-warning btn-radius mt-auto"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  Watch Video
-                </a> */}
-              </div>
-            </div>
-
-            <div
-              data-aos="zoom-in-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              className="card card-work col-lg-3 col-md-3  col-sm-12">
-              <img src={findrecipe} className="card-img-top" alt="..." />
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title title-work">Find the Recipes</h5>
-
-                <p className="card-text">
-                  A Website to find the awesome recipes
-                </p>
-                <div className="space"></div>
-                <a
-                  href="https://deliciousy.netlify.com//"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-warning btn-radius mt-auto">
-                  Read More
-                </a>
-              </div>
-            </div>
-
-            <div
-              data-aos="zoom-in-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              className="card card-work col-lg-3 col-md-3  col-sm-12">
-              <img src={lyricfinder} className="card-img-top" alt="..." />
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title title-work">Song Lyrics</h5>
-
-                <p className="card-text">
-                  React web application to find the song title based on lyrics
-                  and vice versa
-                </p>
-                <div className="space"></div>
-                <a
-                  href="https://singsong.netlify.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-warning btn-radius mt-auto">
-                  Read More
-                </a>
-              </div>
-            </div>
-
-            <div
-              data-aos="zoom-in-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              className="card card-work col-lg-3 col-md-3  col-sm-12">
-              <img src={tapmusic} className="card-img-top" alt="..." />
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title title-work">Colorful Music</h5>
-
-                <p className="card-text">
-                  Create a music by typing and selecting the color. Developed by
-                  using Vanilla Javascript
-                </p>
-                <div className="space"></div>
-                <a
-                  href="https://tapmenow.netlify.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-warning btn-radius mt-auto">
-                  Read More
-                </a>
-              </div>
-            </div>
-            <div
-              data-aos="zoom-in-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              className="card card-work col-lg-3 col-md-3  col-sm-12">
-              <img src={weatherforecast} className="card-img-top" alt="..." />
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title title-work">Weather Forecast</h5>
-
-                <p className="card-text">
-                  A weather prediction developed using Vanilla Javascript
-                </p>
-                <div className="space"></div>
-                <a
-                  href="https://weatheri.netlify.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-warning btn-radius mt-auto">
-                  Read More
-                </a>
-              </div>
-            </div>
+            {this.state.works
+              .filter((result) => result.type.includes(this.state.currentType))
+              .map((item) => this.renderItemWork(item))}
           </div>
+
           <div className="space"></div>
-          {/* <div className="dribble">
-            <a
-              href="https://dribbble.com/rrsari"
-              className="btn btn-outline-primary btn-radius">
-              <i
-                className="fab fa-dribbble space-right"
-                aria-hidden="true"
-                style={{marginRight: '10px'}}></i>
-              See More on Dribbble
-            </a>
-          </div> */}
 
           <div
             data-aos="fade-up-right"
