@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.513792ec.chunk.css",
+    "main.css": "/static/css/main.3eb1406b.chunk.css",
     "main.js": "/static/js/main.30a60ec2.chunk.js",
     "main.js.map": "/static/js/main.30a60ec2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ef12d086.js",
@@ -9,10 +9,10 @@
     "static/js/2.d508440a.chunk.js": "/static/js/2.d508440a.chunk.js",
     "static/js/2.d508440a.chunk.js.map": "/static/js/2.d508440a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a54ab208159f30f90bd24cbf4b864028.js": "/precache-manifest.a54ab208159f30f90bd24cbf4b864028.js",
+    "precache-manifest.a8cbf4e05f5d99943c861d7a54dd96e4.js": "/precache-manifest.a8cbf4e05f5d99943c861d7a54dd96e4.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.400f043a.chunk.css.map": "/static/css/2.400f043a.chunk.css.map",
-    "static/css/main.513792ec.chunk.css.map": "/static/css/main.513792ec.chunk.css.map",
+    "static/css/main.3eb1406b.chunk.css.map": "/static/css/main.3eb1406b.chunk.css.map",
     "static/media/bookio-1.png": "/static/media/bookio-1.e290b536.png",
     "static/media/bookio-2.png": "/static/media/bookio-2.ca604339.png",
     "static/media/bookio-3.png": "/static/media/bookio-3.a3092ab1.png",
