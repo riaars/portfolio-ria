@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3a62a6fd4d0fabdd9a0d629309e8a115",
+    "revision": "6b65d2ddfe150f0e15b2156b2c5d374d",
     "url": "/index.html"
   },
   {
-    "revision": "87b0f72dff6a486a5f39",
+    "revision": "5f2df18b457a8aa161d4",
     "url": "/static/css/2.400f043a.chunk.css"
   },
   {
-    "revision": "79d4a4ffe9d4e3c94148",
-    "url": "/static/css/main.a4a1dd5f.chunk.css"
+    "revision": "e19f6d5fd39f0ac1afa2",
+    "url": "/static/css/main.513792ec.chunk.css"
   },
   {
-    "revision": "87b0f72dff6a486a5f39",
-    "url": "/static/js/2.43280c9c.chunk.js"
+    "revision": "5f2df18b457a8aa161d4",
+    "url": "/static/js/2.d508440a.chunk.js"
   },
   {
-    "revision": "79d4a4ffe9d4e3c94148",
-    "url": "/static/js/main.c8ee83f2.chunk.js"
+    "revision": "e19f6d5fd39f0ac1afa2",
+    "url": "/static/js/main.30a60ec2.chunk.js"
   },
   {
     "revision": "22bb6ff88ca90f8974e2",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b9d115a6ec7448c67694684eeb5d2aac",
     "url": "/static/media/climbing-net-design.b9d115a6.svg"
+  },
+  {
+    "revision": "197ea7cfff55cf6a87b436bfea0f87a5",
+    "url": "/static/media/climbing-nets-cover.197ea7cf.svg"
   },
   {
     "revision": "8f36cc19bf3155717f7fa7bad282b58b",
@@ -112,12 +116,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/lyric-finder.e7d856ed.png"
   },
   {
-    "revision": "edfeeefa60728f889ee273a5f836fcae",
-    "url": "/static/media/resume1.edfeeefa.pdf"
+    "revision": "459bc31a459eb9792cecfb03ea43fa9c",
+    "url": "/static/media/myphoto.459bc31a.svg"
   },
   {
-    "revision": "db5de0ae1fb44a5e4b2a548dd2f04a4c",
-    "url": "/static/media/ria.db5de0ae.svg"
+    "revision": "edfeeefa60728f889ee273a5f836fcae",
+    "url": "/static/media/resume1.edfeeefa.pdf"
   },
   {
     "revision": "193121445a73f6cc0468c14795cf2ec9",
