@@ -1,7 +1,10 @@
 $light-background: white;
-$theme-color: #f5a524;
-// $theme-color: #8991e0;
-$font: 'Montserrat', sans-serif;
+// $theme-color: #f5a524;
+// $theme-color: #fff0a5;
+$theme-color: #f2f0eb;
+$second-theme-color: #bf5065;
+$theme-accent: #bf5065;
+$font: 'Source Sans Pro', sans-serif;
 $font-title: 40px;
 $font-header: 24px;
 $font-content: 18px;
@@ -9,59 +12,91 @@ $lg-space: 120px;
 $m-space: 40px;
 $sm-space: 20px;
 $font-color: #4a4a4a;
+$font-light: white;
 
 .top-profile {
   background-color: $theme-color;
   display: flex;
   align-items: center;
+  padding: 3em;
 }
 
-.profile {
-  margin-left: 100px;
+nav .mdl-navigation__link {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 600;
+  font-size: 11px;
+  text-shadow: 1px 1px 10px #fff;
+  -moz-transition: all 275ms cubic-bezier(0.53, -0.67, 0.73, 0.74);
+  -o-transition: all 275ms cubic-bezier(0.53, -0.67, 0.73, 0.74);
+  -webkit-transition: all 275ms cubic-bezier(0.53, -0.67, 0.73, 0.74);
+  transition: all 275ms cubic-bezier(0.53, -0.67, 0.73, 0.74);
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  text-decoration: none;
 }
+#home {
+  background-color: $theme-color;
+}
+.ria-brand {
+  font-family: 'Mr De Haviland', cursive;
+  color: $theme-accent;
+  font-size: $font-header;
+  text-decoration: none;
+}
+
+.ria-brand :hover {
+  font-family: 'Mr De Haviland', cursive;
+  color: $theme-accent;
+  font-size: $font-header;
+  text-decoration: none;
+}
+.foto-profile {
+  width: 100px;
+}
+
 .profile-title {
-  font-size: $font-title * 2;
+  font-size: $font-title * 1.5;
   font-weight: bold;
-  color: white;
+  color: $font-color;
   font-family: $font;
 }
 
 .profile-summary {
-  font-size: $font-header * 1.5;
+  font-size: $font-header;
   font-family: $font;
-  color: white;
+  color: $font-color;
 }
 
 .profile-header {
-  font-size: $font-title;
+  font-size: $font-title * 1.5;
   font-weight: bold;
-  color: $font-color;
-  text-align: left;
-  margin-left: 100px;
-}
-.about-me-section {
-  margin-top: $m-space;
-  font-family: $font;
+  color: $theme-accent;
+  text-align: center;
 }
 
-.about-me {
+#about-me {
   display: flex;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: #303030;
+  padding: 3em;
+
+  // background-image: url('../images/background.jpg');
 }
 
 .profile-intro {
-  margin-left: 100px;
+  margin: 3em;
   font-size: $font-content;
   padding: $sm-space/2;
-  color: $font-color;
-  text-align: left;
-  margin-right: 100px;
+  color: $font-light;
+  text-align: center;
 }
 
 .foto-profile {
-  margin-top: $lg-space;
-  margin-left: -50px;
-  width: 600px;
+  width: 300px;
   height: auto;
 }
 
@@ -77,19 +112,19 @@ $font-color: #4a4a4a;
 }
 
 .skill-component {
-  margin-left: $lg-space * 2;
-  margin-right: $lg-space * 2;
+  color: $font-light;
 }
+
 .card-title-bold {
   font-size: $font-header;
   font-weight: bold;
   padding: $sm-space;
-  color: $font-color;
+  color: $font-light;
 }
 
 .card-sub-title-bold {
   font-size: $font-content;
-  color: $theme-color;
+  color: $font-light;
   padding: $sm-space;
   font-weight: 400;
 }
@@ -98,9 +133,8 @@ $font-color: #4a4a4a;
 }
 
 .contact-me {
-  margin-top: $m-space;
-  padding: $sm-space;
-  background-color: $theme-color;
+  padding: 3em;
+  background-color: $second-theme-color;
   font-family: $font;
 }
 
@@ -117,20 +151,37 @@ $font-color: #4a4a4a;
 .btn-social-media {
   border-radius: 50%;
   border-width: 1px;
-  border-color: white;
-  background-color: $theme-color;
+  background-color: $theme-accent;
+  border-color: $theme-accent;
   width: $m-space;
   height: $m-space;
   margin: $sm-space/3;
 }
 
+.btn-social-media-white {
+  border-radius: 50%;
+  border-width: 1px;
+  border-color: $font-light;
+  width: $m-space;
+  height: $m-space;
+  margin: $sm-space/3;
+}
+
+.icon-color {
+  color: $theme-accent;
+}
+
+#portfolio {
+  background-color: $theme-color;
+  padding: 3em;
+}
+
 .recentwork-title {
-  margin-top: $m-space;
-  font-size: $font-title;
+  font-size: $font-title * 1.5;
   font-weight: bold;
   color: $font-color;
   font-family: $font;
-  text-align: left;
+  text-align: center;
   margin-left: 100px;
 }
 
@@ -138,14 +189,37 @@ $font-color: #4a4a4a;
   font-size: $font-content;
   font-weight: 50%;
   font-family: $font;
-  text-align: left;
-  margin-left: 100px;
+  text-align: center;
 }
 
 .recent-work-card {
-  padding: $sm-space;
   margin: auto;
   text-align: center;
+  align-items: center;
+}
+
+.menu {
+  padding: 3em;
+}
+.email {
+  font-weight: bold;
+  font-size: 16px;
+  color: $theme-accent;
+}
+.selected-menu {
+  background-color: $theme-accent;
+  color: $font-light;
+  margin: 1em;
+}
+.not-selected-menu {
+  border-color: $theme-accent;
+  color: $theme-accent;
+  margin: 1em;
+}
+
+.center-items {
+  display: flex;
+  justify-content: center;
 }
 .card-work {
   width: 100%;
@@ -159,7 +233,17 @@ $font-color: #4a4a4a;
 }
 
 .btn-radius {
-  border-radius: $m-space;
+  border-radius: 4px;
+}
+.btn-action {
+  background-color: white;
+  border-color: $theme-accent;
+  color: $theme-accent;
+}
+
+.btn-action-fill {
+  background-color: $theme-accent;
+  color: $font-light;
 }
 
 .title-work {
@@ -195,5 +279,6 @@ $font-color: #4a4a4a;
   height: auto;
   text-align: center;
 }
+
 @import 'mobile';
 @import 'config';

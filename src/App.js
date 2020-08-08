@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="App" id="#home">
       <Profile />
-      <RecentWork />
       <AboutMe />
+      <RecentWork />
       <Skill />
     </div>
   );

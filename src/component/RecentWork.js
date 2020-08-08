@@ -4,7 +4,7 @@ import foodbank from '../images/foodbank.png';
 import bookio from '../images/bookio.png';
 import shopistry from '../images/shopistry.png';
 import harvesthaven from '../images/harvesthavent.png';
-import climbingnets from '../images/final-prototype.svg';
+import climbingnets from '../images/climbing-nets-cover.svg';
 import findrecipe from '../images/find-recipe.png';
 import weatherforecast from '../images/weather-forecast.png';
 import tapmusic from '../images/tapmusic.png';
@@ -18,6 +18,27 @@ class RecentWork extends Component {
     works: [
       {
         id: 1,
+        title: 'BookIO',
+        cover: bookio,
+        descrption:
+          'Bookio is a sharing book platform to allow the customer to get, lend, borrow, or give book to someone else in order to maintain sustainability while increasing the literacy.',
+        project_link: '/bookio',
+        project_web: 'https://bookio-5c798.firebaseapp.com/',
+        type: ['All', 'Web Development'],
+      },
+
+      {
+        id: 5,
+        title: 'Climbing with Light',
+        cover: climbingnets,
+        descrption:
+          ' An interactive climbing nets with light and sound for dark winter playground in Sweden.',
+        project_link: '/climbing-light',
+        project_web: 'https://vimeo.com/368869269',
+        type: ['All', 'Physical Interaction'],
+      },
+      {
+        id: 2,
         title: 'Food Sharer',
         cover: foodbank,
         descrption:
@@ -27,16 +48,6 @@ class RecentWork extends Component {
         type: ['All', 'Design'],
       },
 
-      {
-        id: 2,
-        title: 'BookIO',
-        cover: bookio,
-        descrption:
-          'Bookio is a sharing book platform to allow the customer to get, lend, borrow, or give book to someone else in order to maintain sustainability while increasing the literacy.',
-        project_link: '/bookio',
-        project_web: '#',
-        type: ['All', 'Web Development'],
-      },
       {
         id: 3,
         title: 'Shopistry',
@@ -60,24 +71,13 @@ class RecentWork extends Component {
       },
 
       {
-        id: 5,
-        title: 'Climbing with Light',
-        cover: climbingnets,
-        descrption:
-          ' An interactive climbing nets with light and sound for dark winter playground in Sweden.',
-        project_link: '/climbing-light',
-        project_web: '#',
-        type: ['All', 'Physical Interaction'],
-      },
-
-      {
         id: 6,
         title: 'Find Lyrics',
         cover: lyricfinder,
         descrption:
           'React web application to find the song title based on lyrics and vice versa',
-        project_link: 'https://singsong.netlify.com/',
-        project_web: '#',
+        project_link: '',
+        project_web: 'https://singsong.netlify.com/',
         type: ['All', 'Web Development'],
       },
 
@@ -132,13 +132,13 @@ class RecentWork extends Component {
             <a
               href={item.project_web}
               target="_blank"
-              className="btn btn-outline-warning btn-radius mr-1 ">
+              className="btn btn-action btn-radius m-1 ">
               Visit Website
             </a>
 
             <Link
               to={item.project_link}
-              className="btn btn-outline-warning btn-radius ml-1">
+              className="btn btn-action btn-radius m-1">
               Read More
             </Link>
           </div>
@@ -156,8 +156,8 @@ class RecentWork extends Component {
 
   selectedMenu = (menu) => {
     if (this.state.currentType === menu) {
-      return '#ffc107';
-    }
+      return 'btn selected-menu';
+    } else return 'btn not-selected-menu';
   };
   render() {
     console.log(this.state);
@@ -166,70 +166,60 @@ class RecentWork extends Component {
         <div className="recentwork-title">Portfolio</div>
         <div className="recentwork-summary">
           Here are a few recent design projects. Want to see more? Email me!{' '}
-          <a href="#">riaratnasari@outlook.com</a>
+          <a href="#" className="email">
+            riaratnasari@outlook.com
+          </a>
         </div>
-        <div className="row" style={{marginLeft: '100px', marginTop: '50px'}}>
-          <button
-            style={{backgroundColor: this.selectedMenu('All')}}
-            class="btn m-2"
-            name="All"
-            onClick={this.filterItem.bind(this, 'All')}>
-            All
-          </button>
-          <button
-            style={{backgroundColor: this.selectedMenu('Design')}}
-            class="btn m-2"
-            onClick={this.filterItem.bind(this, 'Design')}>
-            Design
-          </button>
+        <div className="menu">
+          <div className="row center-items">
+            <button
+              class={this.selectedMenu('All')}
+              name="All"
+              onClick={this.filterItem.bind(this, 'All')}>
+              All
+            </button>
+            <button
+              className={this.selectedMenu('Design')}
+              onClick={this.filterItem.bind(this, 'Design')}>
+              Design
+            </button>
 
-          <button
-            style={{backgroundColor: this.selectedMenu('Web Development')}}
-            class="btn m-2"
-            onClick={this.filterItem.bind(this, 'Web Development')}>
-            Web Development
-          </button>
+            <button
+              className={this.selectedMenu('Web Development')}
+              onClick={this.filterItem.bind(this, 'Web Development')}>
+              Software Development
+            </button>
 
-          <button
-            style={{backgroundColor: this.selectedMenu('Mobile Development')}}
-            class="btn m-2"
-            onClick={this.filterItem.bind(this, 'Mobile Development')}>
-            Mobile Development
-          </button>
-
-          <button
-            style={{backgroundColor: this.selectedMenu('Physical Interaction')}}
-            class="btn m-2"
-            onClick={this.filterItem.bind(this, 'Physical Interaction')}>
-            Physical Interaction
-          </button>
+            <button
+              className={this.selectedMenu('Physical Interaction')}
+              onClick={this.filterItem.bind(this, 'Physical Interaction')}>
+              Physical Interaction
+            </button>
+          </div>
         </div>
-        <div className="recent-work-card" style={{marginLeft: '100px'}}>
-          <div className="row">
-            {/* {this.state.works.map((item) => this.renderItemWork(item))} */}
-
+        <div className="recent-work-card">
+          <div className="row center-items">
             {this.state.works
               .filter((result) => result.type.includes(this.state.currentType))
               .map((item) => this.renderItemWork(item))}
           </div>
+        </div>
+        <div className="space"></div>
 
-          <div className="space"></div>
-
-          <div
-            data-aos="fade-up-right"
-            data-aos-delay="50"
-            data-aos-duration="2000"
-            className="github">
-            <a
-              href="https://github.com/riaars"
-              className="btn btn-outline-warning btn-radius">
-              <i
-                className="fab fa-github space-right"
-                aria-hidden="true"
-                style={{marginRight: '10px'}}></i>
-              See More on Github
-            </a>
-          </div>
+        <div
+          data-aos="fade-up-right"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          className="github">
+          <a
+            href="https://github.com/riaars"
+            className="btn btn-action-fill btn-radius">
+            <i
+              className="fab fa-github space-right"
+              aria-hidden="true"
+              style={{marginRight: '10px'}}></i>
+            See more on Github
+          </a>
         </div>
       </div>
     );

@@ -17,43 +17,34 @@ class SocialMedia extends Component {
 
         <div className="social-media-class">
           <p>
-            <button className="btn-social-media">
+            <button className="btn-social-media-white">
               <a href="https://www.facebook.com/rrsari25">
                 <i
-                  className="fab fa-linkedin"
-                  style={{color: '#ffffff'}}
+                  className="fab fa-linkedin icon-color"
                   aria-hidden="true"></i>
               </a>
             </button>
-            <button className="btn-social-media">
+            <button className="btn-social-media-white">
               <a href="https://twitter.com/riaa_rs">
-                <i
-                  className="fab fa-twitter"
-                  style={{color: '#ffffff'}}
-                  aria-hidden="true"></i>
+                <i className="fab fa-twitter icon-color" aria-hidden="true"></i>
               </a>
             </button>
-            <button className="btn-social-media">
+            <button className="btn-social-media-white">
               <a href="https://github.com/riaars">
-                <i
-                  className="fab fa-github"
-                  style={{color: '#ffffff'}}
-                  aria-hidden="true"></i>
+                <i className="fab fa-github icon-color" aria-hidden="true"></i>
               </a>
             </button>
-            <button className="btn-social-media">
+            <button className="btn-social-media-white">
               <a href="https://www.facebook.com/rrsari25">
                 <i
-                  className="fab fa-facebook"
-                  style={{color: '#ffffff'}}
+                  className="fab fa-facebook icon-color"
                   aria-hidden="true"></i>
               </a>
             </button>
-            <button className="btn-social-media">
+            <button className="btn-social-media-white">
               <a href="https://dribbble.com/rrsari">
                 <i
-                  className="fab fa-dribbble"
-                  style={{color: '#ffffff'}}
+                  className="fab fa-dribbble icon-color"
                   aria-hidden="true"></i>
               </a>
             </button>

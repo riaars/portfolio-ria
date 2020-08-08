@@ -1,6 +1,6 @@
 $font-title: 24px;
 $font-header: 18px;
-$font-content: 14px;
+$font-content: 16px;
 $lg-space: 80px;
 $m-space: 20px;
 $sm-space: 10px;
@@ -9,7 +9,6 @@ $sm-space: 10px;
   .profile-title {
     font-size: $font-title;
     font-weight: bold;
-    color: white;
     font-family: $font;
     padding: $m-space;
   }
@@ -27,7 +26,6 @@ $sm-space: 10px;
     margin-right: $sm-space/2;
   }
   .contact-me {
-    margin-top: $m-space;
     padding: $m-space;
   }
   .contact-me-header {
@@ -41,11 +39,20 @@ $sm-space: 10px;
     margin: 5px;
   }
 
+  .btn-social-media-white {
+    border-radius: 50%;
+    width: $m-space * 1.5;
+    height: $m-space * 1.5;
+    margin: 5px;
+  }
+  .menu {
+    padding: 1em;
+  }
+
   .profile-intro {
-    margin: $sm-space * 3;
+    margin: 0.5em;
     font-size: $font-content;
     padding: $sm-space/2;
-    text-align: justify;
   }
   .project-description {
     text-align: justify;
@@ -77,8 +84,7 @@ $sm-space: 10px;
 
   .skill-card {
     width: 100%;
-    margin-left: $sm-space * 3;
-    margin-right: $sm-space * 3;
+    margin: 8px;
   }
 
   .skill-component {
@@ -94,20 +100,26 @@ $sm-space: 10px;
     color: $font-color;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     text-align: center;
   }
 
   .recentwork-summary {
-    font-size: $font-content;
-    padding-left: $m-space;
-    padding-right: $m-space;
+    padding: 1em;
     font-weight: 50%;
-    margin-left: 20px;
     text-align: center;
   }
   .card-title-bold {
     font-size: $font-header;
+  }
+  .top-profile {
+    padding: 1em;
+  }
+
+  .selected-menu {
+    margin: 0.5em;
+  }
+  .not-selected-menu {
+    margin: 0.5em;
   }
   .profile {
     margin-left: auto;
@@ -126,5 +138,13 @@ $sm-space: 10px;
   .row {
     margin-right: 0px;
     margin-left: 0px;
+  }
+
+  #about-me {
+    padding: 1em;
+  }
+
+  #portfolio {
+    padding: 1em;
   }
 }
