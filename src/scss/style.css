@@ -211,6 +211,7 @@ nav .mdl-navigation__link {
 
 .not-selected-menu {
   border-color: #bf5065;
+  background-color: transparent;
   color: #bf5065;
   margin: 1em;
 }

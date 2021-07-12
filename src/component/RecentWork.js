@@ -10,7 +10,6 @@ import weatherforecast from '../images/weather-forecast.png';
 import tapmusic from '../images/tapmusic.png';
 import lyricfinder from '../images/lyric-finder.png';
 import {Link} from 'react-router-dom';
-import * as ROUTES from '../constants/Routes';
 
 class RecentWork extends Component {
   state = {
@@ -163,7 +162,7 @@ class RecentWork extends Component {
     console.log(this.state);
     return (
       <div id="portfolio">
-        <div className="recentwork-title">Portfolio</div>
+        <div className="recentwork-title">My Portfolio</div>
         <div className="recentwork-summary">
           Here are a few recent design projects. Want to see more? Email me!{' '}
           <a href="#" className="email">

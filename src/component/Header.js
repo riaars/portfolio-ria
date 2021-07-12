@@ -8,7 +8,7 @@ class Header extends Component {
     return (
       <nav class="navbar navbar-expand-lg navbar-light">
         <Link className="ria-brand" to={ROUTES.HOME}>
-          Ria Ratna Sari
+          <h1> Ria Ratna Sari</h1>
         </Link>
         <button
           class="navbar-toggler"

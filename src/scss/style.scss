@@ -1,9 +1,12 @@
 $light-background: white;
 // $theme-color: #f5a524;
 // $theme-color: #fff0a5;
+
 $theme-color: #f2f0eb;
-$second-theme-color: #bf5065;
+
 $theme-accent: #bf5065;
+// $theme-accent: #f2daac;
+
 $font: 'Source Sans Pro', sans-serif;
 $font-title: 40px;
 $font-header: 24px;
@@ -134,7 +137,7 @@ nav .mdl-navigation__link {
 
 .contact-me {
   padding: 3em;
-  background-color: $second-theme-color;
+  background-color: $theme-accent;
   font-family: $font;
 }
 
@@ -213,6 +216,7 @@ nav .mdl-navigation__link {
 }
 .not-selected-menu {
   border-color: $theme-accent;
+  background-color: transparent;
   color: $theme-accent;
   margin: 1em;
 }
